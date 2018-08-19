@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build" "eleventy"
+    "publish": "eleventy --input=src --output=dist"
   },
   "author": "Chris Pilsworth <cpilswort@users.noreply.github.com> (http://twitter.com/cpilsworth)",
   "license": "ISC",
