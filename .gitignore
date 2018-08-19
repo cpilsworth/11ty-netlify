@@ -1,2 +1,6 @@
 netlifyctl-debug.log
-_site
+dist
+node_modules
+*.swp
+
+
