@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "publish": "eleventy --input=src --output=dist"
+    "publish": "eleventy",
+    "serve": "eleventy --serve"
   },
   "author": "Chris Pilsworth <cpilswort@users.noreply.github.com> (http://twitter.com/cpilsworth)",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^0.5.2"
+    "@11ty/eleventy": "^0.11.0"
   }
 }

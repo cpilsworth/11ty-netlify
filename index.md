@@ -1,3 +1,7 @@
+---
+layout: template.liquid
+---
+
 # DiffaTech Ltd
 
 Expert development, consultancy services.  Specialising in:
