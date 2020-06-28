@@ -1,5 +1,5 @@
 netlifyctl-debug.log
-dist
+_site
 node_modules
 *.swp
 
