@@ -1,14 +1,27 @@
 <!doctype html>
 <html lang="en">
-<head></head>
+<head>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="https://www.diffatech.co.uk{{ page.url }}">
+</head>
 <body>
 <main>
 {{ content }}
+
+<h2>Blog</h2>
+{% assign postslist = collections.posts %}
+{% assign postslistCounter = collections.posts | size %}
+{% include postslist.liquid %}
 </main>
+
 <footer>
-    &copy; 2020 Chris Pilsworth
-    <a href="https://github.com/cpilsworth/11ty-netlify/blob/master/{{ page.inputPath }}">Edit this page on GitHub</a>
-    </footer>
+  <div itemscope itemtype="http://schema.org/Person">
+      &copy; 2020 <span itemprop="name">Chris Pilsworth</span> 
+      </div>
+  </div>
+  <div>
+    [ <a href="https://github.com/cpilsworth/11ty-netlify/blob/master/{{ page.inputPath }}">edit this page on GitHub</a> ]
+    </div>
 </footer>
 </body>
 </html>

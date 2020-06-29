@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="https://www.diffatech.co.uk{{ page.url }}">
+</head>
+<body>
+  <nav>
+      <ul>
+        <li><a href="/">Home</a></li>        
+      </ul>
+ <header>
+      <h1>{{ title }}</h1>
+    </header>
+<main>
+{{ content }}
+
+{% assign previousPost = collections.posts | getPreviousCollectionItem: page %}
+{% assign nextPost = collections.posts | getNextCollectionItem: page %}
+{% if previousPost %}Previous Blog Post: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>{% endif %}
+{% if nextPost %}Next Blog Post: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>{% endif %}
+
+
+</main>
+
+
+<footer>
+    &copy; 2020 Chris Pilsworth
+    <a href="https://github.com/cpilsworth/11ty-netlify/blob/master/{{ page.inputPath }}">Edit this page on GitHub</a>
+    </footer>
+</footer>
+</body>
+</html>
